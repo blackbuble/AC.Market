@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+	
+	 <!-- Status bar overlay for fullscreen mode-->
+	 <!--Left-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-cover">
+	<!-- Navbar for left panel -->
+	<div class="navbar">
+              <div class="navbar-inner">
+                <div class="left"><i class="fa fa-filter"></i>  </div>
+                <div class="center">  Filter</div>
+              </div>
+     </div>
+	 <!-- Content left panel -->
+      <div class="list-block">
+			<ul class="ba-list">
+			
+				<li><a href="#tab2" class="tab-link item-link close-panel">
+				<div class="item-content">
+				<div class="item-inner">
+				<div class="item-title">Harga Rendah-Tinggi <i class="fa fa-sort-numeric-asc"></i></div>
+				</div>
+				</div></a></li>
+				
+				<li><a href="#tab9" class="tab-link item-link close-panel">
+				<div class="item-content">
+				<div class="item-inner">
+				<div class="item-title">Harga Tinggi-Rendah <i class="fa fa-sort-numeric-desc"></i></div>
+				</div>
+				</div></a></li>
+				
+				
+				<li><a href="#tab5" class="tab-link item-link close-panel">
+				<div class="item-content">
+				<div class="item-inner">
+				<div class="item-title">Merk A-Z <i class="fa fa-sort-alpha-asc"></i></div>
+				</div>
+				</div></a></li>
+				
+				<li><a href="#tab6" class="tab-link item-link close-panel">
+				<div class="item-content">
+				<div class="item-inner">
+				<div class="item-title">Merk Z-A <i class="fa fa-sort-alpha-desc"></i></div>
+				</div>
+				</div></a></li>
+				
+				<li><a href="#tab7" class="tab-link item-link close-panel">
+				<div class="item-content">
+				<div class="item-inner">
+				<div class="item-title">PK Rendah-Tinggi <i class="fa fa-sort-amount-asc"></i></div>
+				</div>
+				</div></a></li>
+				
+				<li><a href="#tab8" class="tab-link item-link close-panel">
+				<div class="item-content">
+				<div class="item-inner">
+				<div class="item-title">PK Tinggi-Rendah <i class="fa fa-sort-amount-desc"></i></div>
+				</div>
+				</div></a></li>
+				
+				
+			</ul>
+      </div>
+    </div><!-- End Left -->
+	
+	<div class="views tabs toolbar-fixed">
+	
+			<!-- Main / Welcome Page-->
+			<div id="tab1" class="view tab active"> <!-- Tab#1 -->
+				<div class="navbar"> <!-- Navbar -->
+					<div class="navbar-inner">
+						<!--Logo & Back Navigation Goes Here-->
+						<div class="left">	<a href="#" class="back link icon-only "><i class="icon fa fa-chevron-left"></i></a> 
+							<img src="img/head.png">
+						</div>
+						<!--End Logo-->
+						<!--Title Goes Here-->
+						<div class="center">AC Call's</div>
+						<!--End Title-->
+						<!--Right Icon-->
+						<div class="right">
+						</div>
+						<!--End Icon-->
+					</div> <!-- End Navbar -->
+				</div>
+				
+				<div class="pages navbar-fixed"> <!-- Pages -->
+					<div data-page="home-1" class="page"> <!-- Page #1 -->
+						<div class="page-content ba-page-content"> <!-- Content -->
+							<div class="content-block ba-content-block"> <!-- Content Block -->
+								
+							<div class="card ba-card"> <!-- Big Image Intro Goes Here -->
+							<div class="card-content"><img src="img/belanjaac.png" width="100%"/></div>
+						    </div> <!-- End Big Image -->
+			  
+							<div class="content-block-title ba-title-center">Belanja AC</div> <!-- Intro Title -->
+							  <div class="content-block ba-content"> <!-- Content Intro -->
+								<p><strong><i>Belanja AC</i></strong> merupakan layanan swalayan untuk membeli AC secara online.</p>
+								<p>Berbelanja di <strong><i>Belanja AC</i></strong> memiliki beberapa keuntungan :</p>
+								<ul class="ba-list">
+									<li><i class="fa fa-tags"></i>  Free freon 1 tahun.</li>
+									<li><i class="fa fa-truck"></i>  Gratis biaya kirim.</li>
+									<li><i class="fa fa-bullhorn"></i>  Gratis cuci 3x selama setahun.</li>
+								</ul>
+								
+								<p class="ba-content-center">Saat ini layanan <strong><i>Belanja AC</i></strong> tersedia untuk area <strong>DEPOK</strong></p>
+							  </div> <!-- End Content Intro -->
+							
+							  <div class="ba-grid"> <!-- Button Goes Here -->
+							  <div class="content-block"> <!-- Split row for button place -->
+									<div class="row">
+									  <div class="col-25"></div>
+									  <div class="col-50"> <a href="#tab2" class="button button-big button-fill button-raised color-green tab-link" id="content-show">Next</a> <!-- Button Goes Here -->
+									  </div>
+									  <div class="col-25"></div>
+									</div>
+							   </div> <!-- End of split -->
+							  </div> <!-- End of Button -->
+								
+							</div> <!-- End Content Block -->
+						</div> <!-- End Content -->
+					</div> <!-- End Page #1 -->
+				</div> <!-- End Pages -->
+			</div> <!-- Tab #1 -->
+			<!-- End Main -->
+			
+			<!-- Second View / List Product Lowest price first -->
+    <div id="tab2" class="view tab"> <!-- Tab #2 -->
+        <div class="navbar"> <!-- Navbar -->
+					<div class="navbar-inner">
+						<!--Logo & Back Navigation Goes Here-->
+						<div class="left">	<a href="#tab1" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
+							<img src="img/head.png">
+						</div>
+						<!--End Logo-->
+						<!--Title Goes Here-->
+						<div class="center">Belanja AC</div>
+						<!--End Title-->
+						<!--Right Icon-->
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						</div>
+						<!--End Icon-->
+					</div> <!-- End Navbar -->
+		</div>
+  
+    <div class="pages navbar-fixed">
+        <div data-page="home-2" class="page">
+            <div class="page-content">
+                <div class="content-block">
+                   
+				   <!--Show List of Products-->
+					<!-- Div for Result -->
+							<div id="content-wrap"></div>
+					 <!-- Template7 Template -->
+							<script id="random-template" type="text/template7">
+					
+					{{#each list}}
+				   
+					<div class="card ks-facebook-card" id="card-content-{{id}}">
+					
+					   <div class="card-header ">
+						
+									<p id="name-show-tab-{{id}}" >{{product_name}}</p>
+									<div class="ks-facebook-date prices " id="price-tab-{{id}}">Rp {{price}}</div>
+									</p>
+							
+					  </div>
+					  <div class="card-content"> <img src="{{images}}" width="100%"/></div>
+					  <div class="card-footer no-border">
+					   
+					  <p class="buttons-row ba-bottom-button">
+					  <!--<a href="#" class="button button-raised button-fill color-red cart" id="add-cart-{{id}}" onclick="simpleCart.add('name={{product_name}}','price={{price}}','image={{image}}')">Add to Cart</a><a href="#tab3" id="show-tab-{{id}}" class="detail button button-raised button-fill color-cyan show-tab-{{id}} tab-link">Detail</a></p>
+					  -->
+					  <a href="javascript:;" class="button button-raised button-fill color-red cart item_add" id="add-cart-{{id}}" onclick="simpleCart.add({name:'{{product_name}}', price:{{price}}});">Add to Cart</a><a href="#tab3" id="show-tab-{{id}}" class="detail button button-raised button-fill color-cyan show-tab-{{id}} tab-link">Detail</a></p>
+					</div>
+
+					</div>
+					
+					 {{/each}}
+					
+					 </script>
+				   
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End Tab #2 -->
+	<!-- End Second View -->
+	
+
+
+			<!-- Five View / Products A-Z -->
+    <div id="tab5" class="view tab"> <!-- Tab #5 -->
+        <div class="navbar"> <!-- Navbar -->
+					<div class="navbar-inner">
+						<!--Logo & Back Navigation Goes Here-->
+						<div class="left">	<a href="#tab1" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
+							<img src="img/head.png">
+						</div>
+						<!--End Logo-->
+						<!--Title Goes Here-->
+						<div class="center">Belanja AC</div>
+						<!--End Title-->
+						<!--Right Icon-->
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						</div>
+						<!--End Icon-->
+					</div> <!-- End Navbar -->
+		</div>
+  
+    <div class="pages navbar-fixed">
+        <div data-page="home-5" class="page">
+            <div class="page-content">
+                <div class="content-block">
+                   
+				   <!--Show List of Products-->
+					<!-- Div for Result -->
+							<div id="content-wrap1"></div>
+					 <!-- Template7 Template -->
+							<script id="random-template-product" type="text/template7">
+					
+					{{#each list}}
+				   
+					<div class="card ks-facebook-card" id="card-content-{{id}}">
+					
+					   <div class="card-header ">
+						
+									<p id="name-show-tab-{{id}}">{{product_name}}</p>
+									<div class="ks-facebook-date prices" id="price-tab-{{id}}">Rp {{price}}</div>
+									</p>
+							
+					  </div>
+					  <div class="card-content"> <img src="{{images}}" width="100%"/></div>
+					  <div class="card-footer no-border">
+					   
+					  <p class="buttons-row ba-bottom-button">
+					  <a href="#" class="button button-raised button-fill color-red cart" id="add-cart-{{id}}" onclick="simpleCart.add('name={{product_name}}','price={{price}}','image={{image}}')">Add to Cart</a><a href="#tab3" id="show-tab-{{id}}" class="detail button button-raised button-fill color-cyan show-tab-{{id}} tab-link">Detail</a></p>
+					</div>
+
+					</div>
+					
+					 {{/each}}
+					
+					 </script>
+				   
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End Tab #5 -->
+	<!-- End Second View -->
+	
+	
+	<!-- Five View / Products Z-A -->
+    <div id="tab6" class="view tab"> <!-- Tab #6 -->
+        <div class="navbar"> <!-- Navbar -->
+					<div class="navbar-inner">
+						<!--Logo & Back Navigation Goes Here-->
+						<div class="left">	<a href="#tab1" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
+							<img src="img/head.png">
+						</div>
+						<!--End Logo-->
+						<!--Title Goes Here-->
+						<div class="center">Belanja AC</div>
+						<!--End Title-->
+						<!--Right Icon-->
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						</div>
+						<!--End Icon-->
+					</div> <!-- End Navbar -->
+		</div>
+  
+    <div class="pages navbar-fixed">
+        <div data-page="home-6" class="page">
+            <div class="page-content">
+                <div class="content-block">
+                   
+				   <!--Show List of Products-->
+					<!-- Div for Result -->
+							<div id="content-wrapz"></div>
+					 <!-- Template7 Template -->
+							<script id="random-template-product-z" type="text/template7">
+					
+					{{#each list}}
+				   
+					<div class="card ks-facebook-card" id="card-content-{{id}}">
+					
+					   <div class="card-header ">
+						
+									<p id="name-show-tab-{{id}}">{{product_name}}</p>
+									<div class="ks-facebook-date prices" id="price-tab-{{id}}">Rp {{price}}</div>
+									</p>
+							
+					  </div>
+					  <div class="card-content"> <img src="{{images}}" width="100%"/></div>
+					  <div class="card-footer no-border">
+					   
+					  <p class="buttons-row ba-bottom-button">
+					  <a href="#" class="button button-raised button-fill color-red cart" id="add-cart-{{id}}" onclick="simpleCart.add('name={{product_name}}','price={{price}}','image={{image}}')">Add to Cart</a><a href="#tab3" id="show-tab-{{id}}" class="detail button button-raised button-fill color-cyan show-tab-{{id}} tab-link">Detail</a></p>
+					</div>
+
+					</div>
+					
+					 {{/each}}
+					
+					 </script>
+				   
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End Tab #6 -->
+	<!-- End Second View -->
+	
+	
+	<!-- Five View / Products Z-A -->
+    <div id="tab7" class="view tab"> <!-- Tab #7 -->
+        <div class="navbar"> <!-- Navbar -->
+					<div class="navbar-inner">
+						<!--Logo & Back Navigation Goes Here-->
+						<div class="left">	<a href="#tab1" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
+							<img src="img/head.png">
+						</div>
+						<!--End Logo-->
+						<!--Title Goes Here-->
+						<div class="center">Belanja AC</div>
+						<!--End Title-->
+						<!--Right Icon-->
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						</div>
+						<!--End Icon-->
+					</div> <!-- End Navbar -->
+		</div>
+  
+    <div class="pages navbar-fixed">
+        <div data-page="home-7" class="page">
+            <div class="page-content">
+                <div class="content-block">
+                   
+				   <!--Show List of Products-->
+					<!-- Div for Result -->
+							<div id="content-wrap2"></div>
+					 <!-- Template7 Template -->
+							<script id="random-template-harga" type="text/template7">
+					
+					{{#each list}}
+				   
+					<div class="card ks-facebook-card" id="card-content-{{id}}">
+					
+					   <div class="card-header ">
+						
+									<p id="name-show-tab-{{id}}">{{product_name}}</p>
+									<div class="ks-facebook-date prices" id="price-tab-{{id}}">Rp {{price}}</div>
+									</p>
+							
+					  </div>
+					  <div class="card-content"> <img src="{{images}}" width="100%"/></div>
+					  <div class="card-footer no-border">
+					   
+					  <p class="buttons-row ba-bottom-button">
+					  <a href="#" class="button button-raised button-fill color-red cart" id="add-cart-{{id}}" onclick="simpleCart.add('name={{product_name}}','price={{price}}','image={{image}}')">Add to Cart</a><a href="#tab3" id="show-tab-{{id}}" class="detail button button-raised button-fill color-cyan show-tab-{{id}} tab-link">Detail</a></p>
+					</div>
+
+					</div>
+					
+					 {{/each}}
+					
+					 </script>
+				   
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End Tab #7 -->
+	<!-- End Second View -->
+	
+	
+		<!-- Fourth View / Shopping Cart -->
+    <div id="tab4" class="view tab"> <!-- Tab #4 -->
+        <div class="navbar"> <!-- Navbar -->
+					<div class="navbar-inner">
+						<!--Logo & Back Navigation Goes Here-->
+						<div class="left">	<a href="#tab2" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
+							<img src="img/head.png">
+						</div>
+						<!--End Logo-->
+						<!--Title Goes Here-->
+						<div class="center">Troli</div>
+						<!--End Title-->
+						<!--Right Icon-->
+						<div class="right">						</div>
+						<!--End Icon-->
+					</div> <!-- End Navbar -->
+		</div>
+  
+    <div class="pages navbar-fixed">
+        <div data-page="home-4" class="page">
+            <div class="page-content">
+			
+				<div class="card" id="ba-item-list-empty">
+                <div class="content-block">
+                
+				<div class="card-content">	
+				  <p><i class="fa fa-shopping-cart"></i> Troli anda kosong</p>
+				</div>
+				
+                </div>
+				</div>
+				
+				<div class="card" id="ba-item-list">
+                <div class="content-block">
+                   
+				    <!--Add a Div with the class "simpleCart_items" to show your shopping cart area.-->
+				<div class="card-header">
+				Keranjang Belanja
+				</div>
+				
+				<div class="card-content">	
+				<div class="simpleCart_items" >
+				</div>
+				</div>
+				
+				<div class="card-footer">
+				<!--Here's the Links to Checkout and Empty Cart-->
+				<p class="buttons-row ba-bottom-button">
+				<a href="#" class="simpleCart_empty button button-fill button-raised color-red">Bersihkan</a>
+				<!--<a href="#" class="simpleCart_checkout button button-fill button-raised color-cyan">Selanjutnya</a>-->
+				<a href="#" class="next button button-fill button-raised color-cyan">Selanjutnya</a>
+				</p>
+				</div>
+				
+				
+				
+                </div>
+				</div>
+				
+				<div class="card" id="ba-customer">
+				
+			
+				<div class="content-block">
+					<div class="content-block-title">Informasi Pengiriman</div>
+					<div class="list-block inputs-list">
+						<form id="contact" method="post" action="" class="commentForm">
+					  <ul>
+						<li>
+						  <div class="item-content">
+							<div class="item-media"><i class="fa fa-user"></i></div>
+							<div class="item-inner"> 
+							  <div class="item-input">
+								<input type="text" placeholder="Nama Lengkap" id="name"/>
+							  </div>
+							</div>
+						  </div>
+						</li>
+						<li>
+						  <div class="item-content">
+							<div class="item-media"><i class="fa fa-envelope"></i></div>
+							<div class="item-inner"> 
+							  <div class="item-input">
+								<input type="email" placeholder="E-mail" id="email"/>
+							  </div>
+							</div>
+						  </div>
+						</li>
+						<li>
+						  <div class="item-content">
+							<div class="item-media"><i class="fa fa-plane"></i></div>
+							<div class="item-inner"> 
+							  <div class="item-input">
+								<input type="text" placeholder="Alamat" id="alamat"/>
+							  </div>
+							</div>
+						  </div>
+						</li>
+						<li>
+						  <div class="item-content">
+							<div class="item-media"><i class="fa fa-map-marker"></i></div>
+							<div class="item-inner"> 
+							  <div class="item-input">
+								<input type="text" placeholder="Kota" id="kota"/>
+							  </div>
+							</div>
+						  </div>
+						</li>
+						<li>
+						  <div class="item-content">
+							<div class="item-media"><i class="fa fa-phone"></i></div>
+							<div class="item-inner"> 
+							   <div class="item-input">
+								<input type="tel" placeholder="Phone" id="phone"/>
+							  </div>
+							</div>
+						  </div>
+						</li>
+						
+						
+					  </ul>
+					  </form>
+					  <!--<input type="submit" id="SendOrderButton" value="Send Order" class="simpleCart_checkout button button-fill color-cyan">-->
+					  <a href="javascript:;" class="simpleCart_checkout button button-fill color-cyan">Send Order</a>
+					</div>
+				</div>
+				
+				</div>
+				
+				
+            </div>
+        </div>
+    </div>
+</div> <!-- End Tab #4 -->
+	<!-- End Fourth View -->
+	
+	<!-- Third View / Detail Produk -->
+
+<div id="tab3" class="view tab"> <!-- Tab #3 -->
+    <div class="navbar"> <!-- Navbar -->
+					<div class="navbar-inner">
+						<!--Logo & Back Navigation Goes Here-->
+						<div class="left">	<a href="#tab2" class="back link icon-only tab-link third" id="back-tab-{{id}}" data-force="true"><i class="icon fa fa-chevron-left"></i></a> 
+							<img src="img/head.png">
+						</div>
+						<!--End Logo-->
+						<!--Title Goes Here-->
+						<div class="center">Belanja AC</div>
+						<!--End Title-->
+						<!--Right Icon-->
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a><a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						</div>
+						<!--End Icon-->
+					</div> <!-- End Navbar -->
+	</div>
+	
+    <div class="pages navbar-fixed">
+        <div data-page="home-3" class="page">
+            <div class="page-content">
+                <div class="content-block">
+									
+									
+					 <!--Show Detail of Products-->
+					 <!-- Div for Result -->
+							<div id="content-wraper"></div>
+					 <!-- Template7 Template -->
+							<script id="detail-template" type="text/template7">
+					
+
+					<!-- Scrollable page content-->
+				   
+					
+					  {{#each list}}
+					
+					<div class="card ks-facebook-card ba-none" id="now-show-tab-{{id}}">
+					
+					  <div class="card-header ">
+						
+									<p id="name-show-tab-{{id}}">{{product_name}}</p>
+									<div class="ks-facebook-date price" id="price-show-tab-{{id}}">Rp {{price}}</div>
+									</p>
+							
+					  </div>
+					  <div class="card-content"> <img src="{{images}}" width="100%"/>
+					  <div class="card-content-inner">
+						<div class="ba-grid">
+							<div class="content-block">
+								<div class="row">
+									<div class="col-25"><strong>Nama Produk: </strong></div>
+									<div class="col-75"> 
+									<p class="ba-desc">{{product_name}}</p>
+									</div>
+									<div class="col-25"><strong>Teknologi: </strong></div>
+									<div class="col-75"> 
+									<p class="ba-desc">{{technology}}</p>
+									</div>
+									<div class="col-25"><strong>Deskripsi: </strong></div>
+									<div class="col-75"> 
+									<p class="ba-desc">{{description}}</p>
+									</div>
+									<div class="col-25"><strong>Power: </strong></div>
+									<div class="col-75"> 
+									<p class="ba-desc">{{power}}</p>
+									</div>
+									<div class="col-25"><strong>BTU: </strong></div>
+									<div class="col-75"> 
+									<p class="ba-desc">{{btu}}</p>
+									</div>
+									
+									</div>
+								</div>
+								<div class="price ba-price-content-center" id="price-show-tab-{{id}}"><strong>Rp {{price}}</strong></div>
+							</div>
+						</div>
+						<a href="#" class="button button-raised button-fill color-red" id="item{{id}}">Add to Cart</a>
+					  </div>
+					  </div>
+					  
+					 
+					</div>
+					</div>
+					{{/each}}
+					
+				</script>
+					
+					
+					
+                </div>
+            </div>
+        </div><!-- End Tab #3 -->
+		
+		
+    </div> <!-- End Views -->
+
+		
+
+	
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+	<!-- -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="js/simpleCart305.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+$(document).ready(function(){
+  var test = $('span').text();
+  //alert (test);
+})
+</script>
+	<script type="text/javascript">
+	
+	
+
+	//simpleCart.cartHeaders = ['Name','price','Quantity_input','Total'];
+	</script>
+	<script type="text/javascript">
+		//simpleCart.currency = Rupiah;
+		//simpleCart = new cart("brett@wojodesign.com");
+		//simpleCart.cartStyle = "table";
+	</script>
+	<script>
+simpleCart({
+//var myCart = simpleCart({ 
+
+		//Setting the Cart Columns for the sidebar cart display.
+		cartColumns: [
+			//{ attr: "image", label: false, view: "image"},
+			//Name of the item
+			{ attr: "name" , label: "Item" },
+			//Quantity displayed as an input
+			{ attr: "quantity", label: "Qty", view: "input"},
+			
+			//Built in view for a remove link
+			{ view:'remove', text: "Hapus", label: "Hapus"},
+			
+			//Price of item
+			//{ attr: "price", label: "Price", view: "currency"},
+			//Subtotal of that row (quantity of that item * the price)
+			{ attr: "total" , label: "SubTot", view: "currency"  }
+		],
+		cartStyle: "table",
+		
+		checkout: {
+		type: "SendForm",
+		url: "http://accalls.com/android/sendcart.php",
+
+
+		//type: "PayPal" , //original Simplecart 
+		//email: "your-shop@yourmail.com",
+		
+		// http method for form, "POST" or "GET", default is "POST"
+		method: "POST" ,
+		
+		// url to return to on successful checkout, default is null
+		success: "success.html" ,
+		
+		// url to return to on cancelled checkout, default is null
+		cancel: "cancel.php" ,
+		
+		extra_data: {
+			name: document.getElementById("name").value,
+			email: document.getElementById("email").value,
+			phone: document.getElementById("phone").value,
+			alamat: document.getElementById("alamat").value,
+			kota: document.getElementById("kota").value,
+		cartid: "12321321"
+    }
+}
+
+});
+
+simpleCart.currency( "IDR" );
+
+simpleCart.bind( 'beforeCheckout' , function( data ){
+		data.name = document.getElementById("name").value;
+		data.email = document.getElementById("email").value;
+		data.phone = document.getElementById("phone").value;
+		data.alamat = document.getElementById("alamat").value;
+		data.kota = document.getElementById("kota").value;
+		//alert(data.name);
+		
+});
+
+
+//console.log(myCart.checkout.extra_data); //view in your console
+
+</script>
+  </body>
+</html>
