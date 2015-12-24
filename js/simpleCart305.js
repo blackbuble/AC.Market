@@ -82,6 +82,7 @@
 					"SEK": { code: "SEK", symbol: "SEK&nbsp;", name: "Swedish Krona" },
 					"CHF": { code: "CHF", symbol: "CHF&nbsp;", name: "Swiss Franc" },
 					"THB": { code: "THB", symbol: "&#3647;", name: "Thai Baht" },
+					//"IDR": { code: "IDR", symbol: "Rp&nbsp;", name: "Indonesia Rupiah" },
 					"BTC": { code: "BTC", symbol: " BTC", name: "Bitcoin", accuracy: 4, after: true	}
 				},
 

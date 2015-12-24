@@ -8,6 +8,7 @@ var temp = $$('#detail-template').html();//detail
 var tempt = $$('#random-template-product').html(); //product asc
 var tempti = $$('#random-template-product-z').html();// product desc
 var temptz = $$('#random-template-harga').html();// product desc
+var tempts = $$('#random-template-show').html();// product desc
 
 
 // Compile and render
@@ -16,18 +17,28 @@ var compiledTemplate2 = Template7.compile(temp);//detail
 var compiledTempt = Template7.compile(tempt);// product asc
 var compiledTempti = Template7.compile(tempti);// product desc
 var compiledTemptz = Template7.compile(temptz);// product desc
-
-
-
+var compiledTempts = Template7.compile(tempts);// product desc
 
 
 // Cart action
 $$(document).on('click', '.cart', function () {
-	//alert(this.id);
-	//$$('#output').show();
-	//$$('#output').html(function(i, val) { return val*1+1 });
 	$$('#ba-item-list').show();
 	$$('#ba-item-list-empty').hide();
+});
+
+// Content Show
+$$(document).on('click', '#content-show', function () {
+	
+	$("div[id^='price-tab-']").each(function() {
+	var id = parseInt(this.id.replace("price-tab-", ""), 10);
+	var priceTab = $$("#price-tab-" + id);
+	
+	// do format currency
+		var oldPrice = priceTab.text();
+		var newPrice = formatNumber(oldPrice);
+		$$("#price-tab-" + id).text(newPrice);
+});
+	//$$('#ba-item-list-empty').hide();
 });
 
 // Detail action
@@ -42,6 +53,11 @@ $$(document).on('click', '.detail', function () {
 	var maxLength = 18;
 	var trimmedString = stringName.substr(0, maxLength);
 	$$('#name-'+ this.id).text(trimmedString);
+	var priceDec = $$('#price-'+this.id).text();
+	//alert (priceDec);
+	var priceUpDate = formatNumber(priceDec);
+	$$('#price-'+this.id).text(priceUpDate);
+	$$('.ba-price-content-center').text(priceUpDate);
 });
 
 
@@ -57,8 +73,8 @@ $$(document).on('click', '.third', function () {
 });
 
 $$(document).on('click', '.next', function () {
-	var item = $$('.itemContainer');
-	alert (item.length);
+	var item = $$('.itemRow');
+	//alert (item.length);
     if (item.length > 0) {
 	$$('#ba-item-list').hide();
 	$$('#ba-customer').show();
@@ -67,18 +83,7 @@ $$(document).on('click', '.next', function () {
     }
 });
 
-function cartCheck (){
-	var item = $$('#output').text();
-	var itemQty = document.getElementById('output'), itemQtyVal = parseInt(itemQty);
-	//alert (itemQtyVal);
-    if (item.length > 0) {
-        $$('#ba-item-list').show();
-    } else {
-        $$('#ba-item-list').hide();
-		$$('#ba-customer').hide();
-    }
-	
-}
+
 
 function formatNumber (num) {
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,")
@@ -133,6 +138,17 @@ function getmerkAsc() {
   });
 };
 
+//show random 3 products
+function getrandom3() {
+  // Get JSON Data from UrbanDictionary API 
+  $$.getJSON('http://belanja.accalls.com/products-show', function (json) {
+
+    // Insert rendered template
+    $$('#content-show3').html(compiledTempts(json))
+    
+  });
+};
+
 
 
 
@@ -142,7 +158,7 @@ getrandom();
 getnameAsc();
 getnameDesc();
 getmerkAsc();
-cartCheck();
+getrandom3();
 
 // Select Pull to refresh content
 var ptrContent = $$('.pull-to-refresh-content');

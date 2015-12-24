@@ -90,7 +90,7 @@
 					<div class="navbar-inner">
 						<!--Logo & Back Navigation Goes Here-->
 						<div class="left">	<a href="#" class="back link icon-only "><i class="icon fa fa-chevron-left"></i></a> 
-							<img src="img/head.png">
+							<img src="img/head.png" alt="company logo"/>
 						</div>
 						<!--End Logo-->
 						<!--Title Goes Here-->
@@ -109,7 +109,7 @@
 							<div class="content-block ba-content-block"> <!-- Content Block -->
 								
 							<div class="card ba-card"> <!-- Big Image Intro Goes Here -->
-							<div class="card-content"><img src="img/belanjaac.png" width="100%"/></div>
+							<div class="card-content"><img src="img/belanjaac.png" width="100%" alt="welcome logo"/></div>
 						    </div> <!-- End Big Image -->
 			  
 							<div class="content-block-title ba-title-center">Belanja AC</div> <!-- Intro Title -->
@@ -149,14 +149,14 @@
 					<div class="navbar-inner">
 						<!--Logo & Back Navigation Goes Here-->
 						<div class="left">	<a href="#tab1" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
-							<img src="img/head.png">
+							<img src="img/head.png" alt="company logo"/>
 						</div>
 						<!--End Logo-->
 						<!--Title Goes Here-->
 						<div class="center">Belanja AC</div>
 						<!--End Title-->
 						<!--Right Icon-->
-						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" ></span></i></a>
 						</div>
 						<!--End Icon-->
 					</div> <!-- End Navbar -->
@@ -175,22 +175,22 @@
 					
 					{{#each list}}
 				   
-					<div class="card ks-facebook-card" id="card-content-{{id}}">
+					<div class="card ks-facebook-card simpleCart_shelfItem" id="card-content-{{id}}">
 					
 					   <div class="card-header ">
 						
-									<p id="name-show-tab-{{id}}" >{{product_name}}</p>
-									<div class="ks-facebook-date prices " id="price-tab-{{id}}">Rp {{price}}</div>
-									</p>
+									<div id="name-show-tab-{{id}}" class="ks-facebook-card item_name">{{brand}} {{SKU}} {{power}}</div>
+									<div class="ks-facebook-date prices item_price" id="price-tab-{{id}}">Rp {{price}}</div>
+									
 							
 					  </div>
-					  <div class="card-content"> <img src="{{images}}" width="100%"/></div>
+					  <div class="card-content"> <img src="{{images}}" width="100%" class="item_image"/></div>
 					  <div class="card-footer no-border">
 					   
 					  <p class="buttons-row ba-bottom-button">
 					  <!--<a href="#" class="button button-raised button-fill color-red cart" id="add-cart-{{id}}" onclick="simpleCart.add('name={{product_name}}','price={{price}}','image={{image}}')">Add to Cart</a><a href="#tab3" id="show-tab-{{id}}" class="detail button button-raised button-fill color-cyan show-tab-{{id}} tab-link">Detail</a></p>
 					  -->
-					  <a href="javascript:;" class="button button-raised button-fill color-red cart item_add" id="add-cart-{{id}}" onclick="simpleCart.add({name:'{{product_name}}', price:{{price}}});">Add to Cart</a><a href="#tab3" id="show-tab-{{id}}" class="detail button button-raised button-fill color-cyan show-tab-{{id}} tab-link">Detail</a></p>
+					  <a href="javascript:;" class="button button-raised button-fill color-red cart item_add" id="add-cart-{{id}}" >Add to Cart</a><a href="#tab3" id="show-tab-{{id}}" class="detail button button-raised button-fill color-cyan show-tab-{{id}} tab-link">Detail</a></p>
 					</div>
 
 					</div>
@@ -214,14 +214,14 @@
 					<div class="navbar-inner">
 						<!--Logo & Back Navigation Goes Here-->
 						<div class="left">	<a href="#tab1" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
-							<img src="img/head.png">
+							<img src="img/head.png" alt="company logo"/>
 						</div>
 						<!--End Logo-->
 						<!--Title Goes Here-->
 						<div class="center">Belanja AC</div>
 						<!--End Title-->
 						<!--Right Icon-->
-						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" ></span></i></a>
 						</div>
 						<!--End Icon-->
 					</div> <!-- End Navbar -->
@@ -276,14 +276,14 @@
 					<div class="navbar-inner">
 						<!--Logo & Back Navigation Goes Here-->
 						<div class="left">	<a href="#tab1" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
-							<img src="img/head.png">
+							<img src="img/head.png" alt="company logo"/>
 						</div>
 						<!--End Logo-->
 						<!--Title Goes Here-->
 						<div class="center">Belanja AC</div>
 						<!--End Title-->
 						<!--Right Icon-->
-						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" ></span></i></a>
 						</div>
 						<!--End Icon-->
 					</div> <!-- End Navbar -->
@@ -338,14 +338,14 @@
 					<div class="navbar-inner">
 						<!--Logo & Back Navigation Goes Here-->
 						<div class="left">	<a href="#tab1" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
-							<img src="img/head.png">
+							<img src="img/head.png" alt="company logo"/>
 						</div>
 						<!--End Logo-->
 						<!--Title Goes Here-->
 						<div class="center">Belanja AC</div>
 						<!--End Title-->
 						<!--Right Icon-->
-						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a> 	<a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" ></span></i></a>
 						</div>
 						<!--End Icon-->
 					</div> <!-- End Navbar -->
@@ -400,7 +400,7 @@
 					<div class="navbar-inner">
 						<!--Logo & Back Navigation Goes Here-->
 						<div class="left">	<a href="#tab2" class="back link icon-only tab-link"><i class="icon fa fa-chevron-left"></i></a> 
-							<img src="img/head.png">
+							<img src="img/head.png" alt="company logo"/>
 						</div>
 						<!--End Logo-->
 						<!--Title Goes Here-->
@@ -422,8 +422,39 @@
 				<div class="card-content">	
 				  <p><i class="fa fa-shopping-cart"></i> Troli anda kosong</p>
 				</div>
-				
-                </div>
+				</div>
+				<p>Produk yang mungkin anda sukai</p>
+				<!--Show List of Products-->
+					<!-- Div for Result -->
+							<div id="content-show3"></div>
+					 <!-- Template7 Template -->
+							<script id="random-template-show" type="text/template7">
+					<div class="row ">
+					{{#each list}}
+				   
+					<div class="col-50">
+					<div class="card ks-facebook-card" id="card-content-{{id}}">
+					
+					   <div class="card-header ">
+						
+									<p id="name-show-tab-{{id}}">{{brand}} {{SKU}}</p>
+									
+									</p>
+							
+					  </div>
+					  <div class="card-content"> <img src="{{images}}" width="100%"/></div>
+					  <div class="card-footer no-border">
+					   
+					  <p class="buttons-row ba-bottom-button">
+					  <a href="#tab3" id="show-tab-{{id}}" class="detail button button-raised button-fill color-cyan show-tab-{{id}} tab-link">Detail</a></p>
+					</div>
+
+					</div>
+					</div>
+					
+					 {{/each}}
+					</div>
+					 </script>
 				</div>
 				
 				<div class="card" id="ba-item-list">
@@ -437,13 +468,15 @@
 				<div class="card-content">	
 				<div class="simpleCart_items" >
 				</div>
+				<div class>Total Belanja</div>
+				<div class="simpleCart_grandTotal"></div>
 				</div>
 				
 				<div class="card-footer">
 				<!--Here's the Links to Checkout and Empty Cart-->
 				<p class="buttons-row ba-bottom-button">
-				<a href="#" class="simpleCart_empty button button-fill button-raised color-red">Bersihkan</a>
-				<!--<a href="#" class="simpleCart_checkout button button-fill button-raised color-cyan">Selanjutnya</a>-->
+				<!--<a href="#" class="simpleCart_empty button button-fill button-raised color-red">Bersihkan</a>
+				<a href="#" class="simpleCart_checkout button button-fill button-raised color-cyan">Selanjutnya</a>-->
 				<a href="#" class="next button button-fill button-raised color-cyan">Selanjutnya</a>
 				</p>
 				</div>
@@ -459,14 +492,14 @@
 				<div class="content-block">
 					<div class="content-block-title">Informasi Pengiriman</div>
 					<div class="list-block inputs-list">
-						<form id="contact" method="post" action="" class="commentForm">
+						<form id="contact" method="post" action="#" class="commentForm" name="myForm"  onsubmit="return(validate());">
 					  <ul>
 						<li>
 						  <div class="item-content">
 							<div class="item-media"><i class="fa fa-user"></i></div>
 							<div class="item-inner"> 
 							  <div class="item-input">
-								<input type="text" placeholder="Nama Lengkap" id="name"/>
+								<input type="text" placeholder="Nama Lengkap" id="name" name="Name"/>
 							  </div>
 							</div>
 						  </div>
@@ -476,7 +509,7 @@
 							<div class="item-media"><i class="fa fa-envelope"></i></div>
 							<div class="item-inner"> 
 							  <div class="item-input">
-								<input type="email" placeholder="E-mail" id="email"/>
+								<input type="email" placeholder="E-mail" id="email" name="Email"/>
 							  </div>
 							</div>
 						  </div>
@@ -486,7 +519,7 @@
 							<div class="item-media"><i class="fa fa-plane"></i></div>
 							<div class="item-inner"> 
 							  <div class="item-input">
-								<input type="text" placeholder="Alamat" id="alamat"/>
+								<input type="text" placeholder="Alamat" id="alamat" name="Alamat"/>
 							  </div>
 							</div>
 						  </div>
@@ -496,7 +529,7 @@
 							<div class="item-media"><i class="fa fa-map-marker"></i></div>
 							<div class="item-inner"> 
 							  <div class="item-input">
-								<input type="text" placeholder="Kota" id="kota"/>
+								<input type="text" placeholder="Kota" id="kota" name="Kota"/>
 							  </div>
 							</div>
 						  </div>
@@ -506,7 +539,7 @@
 							<div class="item-media"><i class="fa fa-phone"></i></div>
 							<div class="item-inner"> 
 							   <div class="item-input">
-								<input type="tel" placeholder="Phone" id="phone"/>
+								<input type="tel" placeholder="Phone" id="phone" name="Phone"/>
 							  </div>
 							</div>
 						  </div>
@@ -536,14 +569,14 @@
 					<div class="navbar-inner">
 						<!--Logo & Back Navigation Goes Here-->
 						<div class="left">	<a href="#tab2" class="back link icon-only tab-link third" id="back-tab-{{id}}" data-force="true"><i class="icon fa fa-chevron-left"></i></a> 
-							<img src="img/head.png">
+							<img src="img/head.png" alt="company logo"/>
 						</div>
 						<!--End Logo-->
 						<!--Title Goes Here-->
 						<div class="center">Belanja AC</div>
 						<!--End Title-->
 						<!--Right Icon-->
-						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a><a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" id="quantity"></span></i></a>
+						<div class="right"><a href="#" class="open-panel link icon-only "><i class="icon fa fa-filter"></i></a><a href="#tab4" class="tab-link link icon-only"><i class="icon fa fa-shopping-cart "><span class="badge bg-red simpleCart_quantity" ></span></i></a>
 						</div>
 						<!--End Icon-->
 					</div> <!-- End Navbar -->
@@ -567,23 +600,29 @@
 					
 					  {{#each list}}
 					
-					<div class="card ks-facebook-card ba-none" id="now-show-tab-{{id}}">
+					<div class="card ks-facebook-card ba-none simpleCart_shelfItem" id="now-show-tab-{{id}}">
 					
 					  <div class="card-header ">
 						
-									<p id="name-show-tab-{{id}}">{{product_name}}</p>
-									<div class="ks-facebook-date price" id="price-show-tab-{{id}}">Rp {{price}}</div>
-									</p>
+									<p id="name-show-tab-{{id}}" class="item_name">{{product_name}}</p>
+									<div class="ks-facebook-date price item_price" id="price-show-tab-{{id}}">Rp {{price}}</div>
+									
 							
 					  </div>
-					  <div class="card-content"> <img src="{{images}}" width="100%"/>
+					  <div class="card-content"> <img src="{{images}}" width="100%" class="item_image"/>
 					  <div class="card-content-inner">
 						<div class="ba-grid">
+						<p><strong>Spesifikasi {{product_name}}</strong></p>
+							
 							<div class="content-block">
-								<div class="row">
+								<div class="row no-gutter">
 									<div class="col-25"><strong>Nama Produk: </strong></div>
 									<div class="col-75"> 
 									<p class="ba-desc">{{product_name}}</p>
+									</div>
+									<div class="col-25"><strong>Produk SKU: </strong></div>
+									<div class="col-75"> 
+									<p class="ba-desc">{{SKU}}</p>
 									</div>
 									<div class="col-25"><strong>Teknologi: </strong></div>
 									<div class="col-75"> 
@@ -607,7 +646,7 @@
 								<div class="price ba-price-content-center" id="price-show-tab-{{id}}"><strong>Rp {{price}}</strong></div>
 							</div>
 						</div>
-						<a href="#" class="button button-raised button-fill color-red" id="item{{id}}">Add to Cart</a>
+						<a href="javascript:;" class="button button-raised button-fill color-red item_add" id="item{{id}}">Add to Cart</a>
 					  </div>
 					  </div>
 					  
@@ -641,30 +680,80 @@
 $(document).ready(function(){
   var test = $('span').text();
   //alert (test);
+  $('#ba-customer').hide();
+ 
 })
 </script>
 	<script type="text/javascript">
-	
-	
-
-	//simpleCart.cartHeaders = ['Name','price','Quantity_input','Total'];
-	</script>
-	<script type="text/javascript">
-		//simpleCart.currency = Rupiah;
-		//simpleCart = new cart("brett@wojodesign.com");
-		//simpleCart.cartStyle = "table";
-	</script>
+   <!--
+   // Form validation code will come here.
+      function validate()
+      {
+      
+         if( document.myForm.Name.value == "" )
+         {
+            alert( "Harap isi dengan nama lengkap anda!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.Email.value == "" )
+         {
+            alert( "Harap isi dengan alamat email anda!" );
+            document.myForm.Email.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.Phone.value == "" ||
+         isNaN( document.myForm.Phone.value ) ||
+         document.myForm.Phone.value.length < 7 )
+         {
+            alert( "Harap isi nomor telpon anda dengan benar." );
+            document.myForm.Phone.focus() ;
+            return false;
+         }
+         
+         if( document.myForm.Alamat.value == "" )
+         {
+            alert( "Harap isi alamat anda!" );
+            return false;
+         }
+		 if( document.myForm.Kota.value == "" )
+         {
+            alert( "Harap isi kota anda!" );
+            return false;
+         }
+         return( true );
+      }
+	  
+      function validateEmail()
+      {
+         var emailID = document.myForm.EMail.value;
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         
+         if (atpos < 1 || ( dotpos - atpos < 2 )) 
+         {
+            alert("Please enter correct email ID")
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         return( true );
+      }
+   //-->
+</script>
 	<script>
 simpleCart({
 //var myCart = simpleCart({ 
 
 		//Setting the Cart Columns for the sidebar cart display.
 		cartColumns: [
-			//{ attr: "image", label: false, view: "image"},
+		
+			{ attr: "image", label: false, view: "image"},
 			//Name of the item
 			{ attr: "name" , label: "Item" },
 			//Quantity displayed as an input
-			{ attr: "quantity", label: "Qty", view: "input"},
+			{ attr: "quantity", label: "Qty", view: "text"},
 			
 			//Built in view for a remove link
 			{ view:'remove', text: "Hapus", label: "Hapus"},
@@ -672,13 +761,13 @@ simpleCart({
 			//Price of item
 			//{ attr: "price", label: "Price", view: "currency"},
 			//Subtotal of that row (quantity of that item * the price)
-			{ attr: "total" , label: "SubTot", view: "currency"  }
+			{ attr: "total" , label: "Total", view: "currency"  }
 		],
 		cartStyle: "table",
 		
 		checkout: {
 		type: "SendForm",
-		url: "http://accalls.com/android/sendcart.php",
+		url: "http://pentagram-it.com/demo4/sendcart.php",
 
 
 		//type: "PayPal" , //original Simplecart 
@@ -705,7 +794,33 @@ simpleCart({
 
 });
 
-simpleCart.currency( "IDR" );
+//simpleCart.currency( "IDR" );
+simpleCart.currency({
+  code: "IDR" ,
+  symbol: "Rp " ,
+  name: "Indonesia Rupiah",
+  //delimiter: "," , 
+  //decimal: "," ,
+  accuracy: 0, 
+  
+});
+
+simpleCart.bind('update', function(){
+  if( simpleCart.quantity() === 0 ){
+    // hide the cart
+	$('#ba-item-list-empty').show();
+	$('#ba-item-list').hide();
+	$('#ba-customer').hide();
+	$('.simpleCart_quantity').hide();
+  } else {
+    // show the cart 
+	$('#ba-item-list-empty').hide();
+	$('#ba-item-list').show();
+	//$('#ba-customer').show();
+	$('.simpleCart_quantity').show();
+
+  }
+});
 
 simpleCart.bind( 'beforeCheckout' , function( data ){
 		data.name = document.getElementById("name").value;
