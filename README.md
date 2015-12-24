@@ -5,6 +5,7 @@ Build with Framework7 and Slim Framework.
 
 
 Currently v1.1.0
+
 Pros :
 - Single GUI for everything
 - JSON work perfectly
